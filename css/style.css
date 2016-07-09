@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/*
+ * General
+ */
+
+body {
+    background-color: #ecf0f1;
+    color: #2d3c49;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+/*
+ * Header
+ */
+
+header {
+    border-bottom: 2px solid #7d97ad;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 4em;
+    width: 4em;
+    vertical-align: middle;
+}
+
+.header-name {
+    margin-left: auto;
+}
+
+h1, h4 {
+    font-family: Raleway, Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 7vw;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 5vw;
+    font-weight: 300;
+    float: right;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.text-caps {
+    text-transform: uppercase;
+}
+
+/*
+ * Main
+ */
+
+.main {
+    margin-top: 24px;
+    max-width: 100%;
+}
+
+h2.project-header {
+    font-weight: 400;
+    color: #7d97ad;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.project {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project-image {
+    max-width: 100%;
+}
+
+.project-description {
+    max-width: 100%;
+}
+
+/*
+ * Breakpoints
+ */
+
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 42px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .project {
+        width: 50%;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        font-size: 1em;
+    }
+
+    .project {
+        width: 33%;
+    }
+
+    .main {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
