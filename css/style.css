@@ -51,8 +51,7 @@ h4 {
     font-size: 5vw;
     font-weight: 300;
     float: right;
-    margin-left: auto;
-    margin-right: 0;
+    margin: 0 0 0 auto;
 }
 
 .text-caps {
@@ -66,6 +65,7 @@ h4 {
 .main {
     margin-top: 24px;
     max-width: 100%;
+    display: block;
 }
 
 h2.project-header {
@@ -107,6 +107,10 @@ h2.project-header {
     h1 {
         font-size: 42px;
     }
+
+    h4 {
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width: 720px) {
@@ -127,7 +131,6 @@ h2.project-header {
 
     .main {
         width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 24px auto 0 auto;
     }
 }
